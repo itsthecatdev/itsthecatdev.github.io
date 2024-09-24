@@ -1,2 +1,2 @@
 # Tastschreib Genie 
-:link: download](http://googledrive.net/ "download")
+:link: [download](http://googledrive.net/ "download")
