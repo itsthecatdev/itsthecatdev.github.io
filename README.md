@@ -1,2 +1,2 @@
 ### Project List
-[🔗](https://thatcutekitten03.github.io/index.html)
+[🔗](https://thatcutekitten03.github.io/projectlist.html)
