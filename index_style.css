@@ -78,6 +78,12 @@ main p{
     }
 }
 
+#releases{
+    svg{
+        transform: translateX(-2px);
+    }
+}
+
 .container {
     border: 1px solid #fff;
     border-radius: 1em;
