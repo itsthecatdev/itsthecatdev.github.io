@@ -19,10 +19,11 @@ body {
 #sidebar {
     box-sizing: border-box;
     height: 100vh;
-    width: 200px;
+    width: 215px;
     padding: 5px 1em;
     background-color: #000000;
     border-right: 1px solid #ababab;
+
 }
 #sidebar ul{
     list-style: none;
@@ -41,6 +42,15 @@ body {
     svg{
         fill: #622bd9;
         transform: translateY(4px);
+    }
+    text-decoration: none;
+}
+#sidebar ul li.actions a{
+    color: #85b8fa;
+    align-items: center;
+    svg{
+        fill: #85b8fa;
+        transform: translateY(6px);
     }
     text-decoration: none;
 }
@@ -89,4 +99,10 @@ main p{
     border-radius: 1em;
     margin-bottom: 5px;
     padding: min(3em,3%)
+}
+
+#shift_icon{
+    svg{
+        transform: translateY(-15px);
+    }
 }
