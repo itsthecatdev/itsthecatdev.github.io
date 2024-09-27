@@ -100,9 +100,3 @@ main p{
     margin-bottom: 5px;
     padding: min(3em,3%)
 }
-
-#shift_icon{
-    svg{
-        transform: translateY(-15px);
-    }
-}
