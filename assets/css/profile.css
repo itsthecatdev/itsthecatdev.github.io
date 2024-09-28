@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+body{
+    background-image: url("/assets/bg.png");
+    background-size: 4rem;
+    background-repeat: repeat 0 0;
+    animation: infiniteMove linear infinite 10000ms;
+    transform: translateY(-20px);
+}
+
+@keyframes infiniteMove {
+    0% {
+        background-position: 0rem 0rem;
+    }
+    100%{
+        background-position: 5rem 5rem;
+    }
+    
+}
+
+#moderator{
+    size: 10px;
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(1px);
+    
+}
+
+#title{
+    color:white;
+    font-size: 50px;
+    font-family: Fredoka;
+    display: block;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(-360px);
+}
