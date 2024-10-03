@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+    color:white;
+}
+body {
+    min-height: 100vh;
+    background-color: #0a0910;
+    display:grid;
+    grid-template-columns: auto 1fr;
+}
+
+#sidebar {
+    box-sizing: border-box;
+    height: 100vh;
+    width: 215px;
+    padding: 5px 1em;
+    background-color: #000000;
+    border-right: 1px solid #ababab;
+
+}
+#sidebar ul{
+    list-style: none;
+    text-decoration: none;
+}
+#sidebar > ul > li:first-child{
+    display:flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+    gap: 1em;
+
+}
+#sidebar ul li.active a{
+    color: #622bd9;
+    align-items: center;
+    svg{
+        fill: #622bd9;
+        transform: translateY(4px);
+    }
+    text-decoration: none;
+}
+
+#errormessage {
+    color:red;
+}
+
+#errormessagealt {
+    color:rgb(255, 16, 16);
+    text-decoration: dotted;
+}
+
+#invite {
+    color:blueviolet;
+    text-decoration: none;
+}
+
+#sidebar ul li.actions a{
+    color: #85b8fa;
+    align-items: center;
+    svg{
+        fill: #85b8fa;
+        transform: translateY(6px);
+    }
+    text-decoration: none;
+}
+#sidebar ul li a{
+    color: #ffffff;
+    align-items: center;
+    svg{
+        fill: #ffffff;
+        transform: translateY(4px);
+    }
+    text-decoration: none;
+}
+
+main{
+    padding: min(30px,7%);
+}
+main p{
+    color:aliceblue;
+    margin-top:5px;
+    margin-bottom:15px;
+}
+
+#blog_creator{
+    color:#7fa9d0;
+    transform: translateY(-12px);
+}
+#blog_type{
+    color:palegreen;
+    transform: translateY(5px)
+}
+#blog_button{
+    svg{
+        fill: #e162eb;
+        transform: translateY(-2px);
+    }
+}
+
+#releases{
+    svg{
+        transform: translateX(-2px);
+    }
+}
+
+.container {
+    border: 1px solid #fff;
+    border-radius: 1em;
+    margin-bottom: 5px;
+    padding: min(3em,3%)
+}
