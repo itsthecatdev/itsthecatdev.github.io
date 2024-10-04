@@ -61,10 +61,10 @@ body {
 }
 
 #sidebar ul li.actions a{
-    color: #85b8fa;
+    color: #ff0000;
     align-items: center;
     svg{
-        fill: #85b8fa;
+        fill: #f30f07;
         transform: translateY(6px);
     }
     text-decoration: none;
@@ -114,4 +114,14 @@ main p{
     border-radius: 1em;
     margin-bottom: 5px;
     padding: min(3em,3%)
+}
+
+.xterm {
+    padding:0%;
+    width: 86.5vw;
+    height: 45.7vw;
+}
+.terminal {
+    margin: 0;
+    padding: 0;
 }
