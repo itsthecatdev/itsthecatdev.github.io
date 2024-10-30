@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+    color:white;
+}
+#InkGame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body *{
+    color:#a155ff;
+    text-decoration: none;
+}
