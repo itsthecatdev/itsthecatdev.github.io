@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+body {
+    background-color: #101;
+    padding:0;
+    padding-top:0px;
+    padding-left:0%;
+    margin:0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#img-gorf {
+    position: absolute;
+    transform: scaleX(-1);
+    right: 50px;
+    top: 10px;
+    width: 300px;
+    height: 600px;
+}
+#img-fh {
+    position: absolute;
+    transform: scaleX(-1);
+    right: 1300px;
+    top: 100px;
+    width: 300px;
+    height: 400px;
+}
+.modsetc {
+    color:white;
+    position:absolute;
+    right:500px;
+    top:120px;
+    transform:translateY(+2rem);
+    font-size: 50px;
+}
+#img-gorf:hover {
+    filter:grayscale(100%)
+}
+.get-in {
+    color:white;
+    text-decoration: none;
+    position:absolute;
+    right:800px;
+    top:600px;
+    font-size: 30px;
+}
+.switch {
+    color:white;
+    text-decoration: none;
+}
