@@ -1,0 +1,48 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+body main{
+    position: fixed;
+    left:220px;
+}
+
+.navbar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.navbar a{
+    color:white;
+    margin-left:10px;
+    font-size: 20px;
+    text-decoration: none;
+    svg {
+        transform: translateY(5px);
+    }
+}
+.navbar h1{
+    color:rgb(57, 51, 83);
+    font-size: 25px;
+    text-decoration:overline;
+}
+.navbar h2{
+    font-size: 25px;
+    margin-left:10px;
+    color: white;
+}
+
+.navbar a:hover {
+  color: #49a4ff;
+  svg {
+    fill: #49a4ff;
+  }
+}
+#active {
+    color:rgb(153, 79, 245);
+}
