@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="../../../../site-assets/css/qr-codesc.css">
+</head>
+<body>
+  <div class="container">
+    <h1>QR Code von Raum-ID <br><a href="../../../../docs/tg/room-list.html">liste der räume</a></h1>
+    <form id="qr-form">
+      <label for="room-id">Enter Room ID:</label>
+      <input type="text" id="room-id" name="room-id" required placeholder="Enter room ID">
+      <button type="submit">Generate QR Code</button>
+    </form>
+  </div>
+  <script>
+    document.getElementById('qr-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const roomId = document.getElementById('room-id').value;
+      if (roomId.trim() !== '') {
+        window.location.href = `generated.html?roomId=${encodeURIComponent(roomId)}`;
+      }
+    });
+  </script>
+</body>
+</html>

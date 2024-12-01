@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated QR Code</title>
+  <link rel="stylesheet" href="../../../../site-assets/css/qr-codesc.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Generated QR Code</h1>
+    <div id="qr-code"></div>
+    <p id="room-info"></p>
+    <button onclick="window.history.back()">Go Back</button>
+  </div>
+  <script src="../../../../site-assets/js/qrcode/qrcode.min.js"></script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const roomId = urlParams.get('roomId');
+    const qrCodeContainer = document.getElementById('qr-code');
+    const roomInfo = document.getElementById('room-info');
+
+    if (roomId) {
+      roomInfo.textContent = `Room ID: ${roomId}`;
+      const roomUrl = `https://itsthecatdev.github.io/projects/tastschreibgenie/me/${encodeURIComponent(roomId)}.html`;
+      new QRCode(qrCodeContainer, {
+        text: roomUrl,
+        width: 300,
+        height: 300,
+      });
+    } else {
+      roomInfo.textContent = 'No Room ID provided.';
+    }
+  </script>
+</body>
+</html>
