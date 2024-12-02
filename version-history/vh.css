@@ -1,0 +1,13 @@
+body * {
+    color: blueviolet;
+    text-decoration: none;
+}
+#current {
+    color:black;
+}
+#rls {
+    color: #003000;
+}
+#qup {
+    color: red;
+}
