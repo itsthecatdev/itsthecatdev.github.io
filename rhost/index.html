@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RHOST:ERROR</title>
+    <style>
+        #BIG_ERROR{
+            color:red;
+        }
+        #notice{
+            color:orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Willkommen zurück, ${USER.THIS}<br>
+        Raum "${ROOM.THIS}" wurde für dieses Netzwerk freigegeben.<br>
+        <e id="BIG_ERROR">[Core] 404 - Server not found</e><br>
+        <info>[Core] Info:</info><br>
+        Dieser Fehler bedeuten in den meistenfällen das<br>
+        der server root-tgmanager nicht online ist, oder<br>
+        der zugriff auf 127.0.0.0:6000 verweigert wurde.<br>
+        <e id="notice">[Core] Using ContextEntityType of local folder ../site-assets/tg/fallbackjs/modules</e>
+    </div>
+    <e id="BIG_ERROR"[Display] [ErrorHandler] canno't get module 'dev.shxcat.OnHost': Thirdparty Module blocked 'dev.shxcat.Handler.GetModule'<br>
+    [TraceBack] [ErrorHandler] Error in getting ModuleStack $GetModule.GetModule:<br>
+    <strong>[TraceBack] [Handler] Site:Module.Image from assets.itsthecatdev.github.io/cdn/rhost-module/production</strong><br></e>
+    <strong>[TraceBack] [Error Handler] loaded modules:</strong><br>
+    <li>dev.shxcat.Handler</li>
+    <li>dev.shxcat.ErrorHandler</li>
+    <li>dev.shxcat.Html</li>
+    <li>dev.shxcat.Core</li>
+    <li>dev.shxcat.cdn</li>
+    <strong>[Core] Ending Room, putting server to sleep...                         100%</strong><br>
+    <strong>[Core] Server is now on sleep.</strong>
+</body>
+</html>
