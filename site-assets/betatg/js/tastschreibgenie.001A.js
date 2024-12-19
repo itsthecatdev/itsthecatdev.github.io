@@ -30,6 +30,7 @@ function startGame() {
 // hide elements with id "LOADING-ICON" after 10 seconds.
 setTimeout(() => {
     document.getElementById("LOAD-ICON").style.display = "none";
+    document.getElementById("connection-text").style.display = "none";
     document.getElementById("game-container").style.display = "block";
 }, 5000); 
 

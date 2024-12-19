@@ -3,12 +3,31 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-color: rgb(214, 214, 214);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+}
+studio{
+    font-family: Arial, sans-serif;
+    svg {
+        fill:#000000;
+        transform: scaleX(10px)
+    };
+    position: fixed;
+    justify-content: flex-start;
+    align-items: flex-start;
+    bottom: 10px;
+    left: 1px;
+}
+studio #studio_logo img{
+    svg {
+        fill:#000000;
+        transform: scaleX(10px);
+        transform: scaleY(10px);
+    };
 }
 
 #game-container {
@@ -81,4 +100,15 @@ h1 {
     padding: 0.5rem 1rem;
     padding-top:5px;
     border: 0.1rem solid #88a8ff;
+}
+
+#connection-text {
+    color:white;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#LOAD-ICON {
+    transform: translateX(20px);
 }
